@@ -1111,6 +1111,89 @@ summary::marker {
     }
 }
 
+.registration .container {
+    display: flex;
+    padding-top: 64px;
+    padding-bottom: 96px;
+}
+
+.registration-left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 128px;
+    label {
+        font-family: $lato_l;
+        font-size: 16px;
+        color: $black;
+        margin-bottom: 20px;
+    }
+    input[type=text] {
+        box-sizing: border-box;
+        border: 1px solid $cartbutton;
+        width: 360px;
+        height: 45px;
+        margin-bottom: 20px;
+        color: $formtext;
+        font-family: $lato_l;
+        font-size: 13px;
+    }
+    .featured-button {
+        width: 167px;
+        font-family: $lato_r;
+        font-size: 14px;
+        padding: 16px 29px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .featured-button svg {
+        margin-left: auto;
+        filter: invert(50%) sepia(94%) saturate(1085%) hue-rotate(313deg) brightness(104%) contrast(89%);
+    }
+    .featured-button:hover svg {
+        filter: invert(100%) sepia(0%) saturate(7485%) hue-rotate(101deg) brightness(100%) contrast(103%);
+    }
+}
+
+.registration-options {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 23px;
+}
+
+.registration-option {
+    input {
+        margin-right: 10px;
+    }
+}
+
+.registration-extra-text {
+    width: 359px;
+    font-family: $lato_l;
+    font-size: 13px;
+    color: $formtext;
+    margin-bottom: 39px;
+}
+
+.registration-right {
+    font-family: $lato_l;
+    font-size: 24px;
+}
+
+.registration-title {
+    margin-bottom: 22px;
+}
+
+.registration-text {
+    margin-bottom: 21px;
+}
+
+.registration-perk {
+    list-style-image: url(../img/registration-checkmark.svg);
+    list-style-position: inside;
+}
+
 @media (max-width: 1024px) {
     .container {
         max-width: 768px;
