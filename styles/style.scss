@@ -1307,10 +1307,13 @@ summary::marker {
         margin: 0;
         margin-right: 16px;
     }
-    .catalog .featured-items {
-         :nth-child(3) {
+    .catalog {
+        .featured-item:nth-of-type(3) {
             display: none;
         }
+    }
+    .featured-item-price {
+        display: block;
     }
     .shopping-cart .container {
         flex-direction: column;
