@@ -742,6 +742,10 @@ input[name=Subscribe] {
   margin-bottom: 128px;
 }
 
+.catalog {
+  padding-top: 0;
+}
+
 .catalog .container {
   padding-top: 51px;
   padding-bottom: 96px;
@@ -1184,9 +1188,18 @@ summary::marker {
   margin-bottom: 21px;
 }
 
+.registration-perks {
+  padding-left: 43px;
+}
+
 .registration-perk {
-  list-style-image: url(../img/registration-checkmark.svg);
-  list-style-position: inside;
+  margin-bottom: 26px;
+}
+.registration-perk:last-of-type {
+  margin-bottom: 0;
+}
+.registration-perk::marker {
+  content: url(../img/registration-checkmark.svg) "     ";
 }
 
 @media (max-width: 1024px) {
